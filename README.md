@@ -1,5 +1,5 @@
 
-<img style = "float: right;" src = "https://github.com/CABSEL/DeltaNeTS/blob/master/image_deltanet.png" width="200" height="200" align="right"> 
+<img style = "float: right;" src = "https://github.com/CABSEL/DeltaNeTS/blob/master/image_deltanet.png" width="300" height="300" align="right"> 
 
 # DeltaNeTS
 DeltaNets is an extension of our previous method DeltaNet, which involves a single-step inference of gene regulatory network and gene targets from (time-series) transcriptional profiles. If steady-state gene expression data are applied, it is same as running DeltaNet. 
