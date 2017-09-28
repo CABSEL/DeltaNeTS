@@ -11,7 +11,7 @@ The MATLAB subroutines in the DeltaNeTS package (__v.1.0__) have been successful
 4.	Add the path for GLMNET package.
 
 #
- >  #### The SALMON package includes the following:
+ >  #### The DeltaNeTS package includes the following:
 
 <br />
 
@@ -20,7 +20,7 @@ __1. example_data__
 A subfolder in DeltaNeTS package, containing example data for testing DeltaNeTS
 
 * ___log2FC_GNW1_114KO-EXP_6tpooints.txt___: log2FC of gene expression data (`lfc`) generated from GeneNetWeaver__[1]__ software. `lfc` consists of time-series expression profiles for 1000 genes from 114 signle-gene knockout (KO) experiments. For each experiment, gene expressions at 6 time points (0, 20, 40, 60, 80, 100) are included. Please refere to GNW1 data in DeltaNeTS manuscript.
-* ___GList.txt___:The list of gene symbols corresponding to the rows in the log2FC data
+* ___GList.txt___: The list of gene symbols corresponding to the rows in the log2FC data
 * ___table_of_samples.txt___: The table of sample descriptions including time points (if in time-series) and group indices (same index for the same KO experiment)
 
 <br /><br />
