@@ -1,0 +1,18 @@
+Package: deltanets
+Title: Inferring Causal Gene Targets from Time Course Expression Data
+Version: 0.1.0
+Authors@R: c(
+    person("Heeju", "Noh", email = "heeju.noh@chem.ethz.ch", role = c("aut","cre")),
+    person("Rudiyanto", "Gunawan", email = "rudi.gunawan@chem.ethz.ch", role = "aut"))
+Description: DeltaNeTS generates a gene perturbation score for each gene in every sample from time-series expression profiles.
+Depends: R (>= 3.4.1)
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: glmnet,
+	doParallel,
+	foreach
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
