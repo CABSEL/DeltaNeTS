@@ -17,7 +17,7 @@ To install `deltanets` directly from github repository, `devtools` is required.
 deltanets package includes gene expression data generated from GeneNetWeaver [1] software.:
 
 
-`lfc`: time-series expression profiles (log2FC) for 1000 genes from 114 signle-gene knockout (KO) experiments. For each experiment, gene expressions at 6 time points (0, 20, 40, 60, 80, 100) are included. Please refere to GNW1 data in DeltaNeTS manuscript.
+`lfc`: time-series expression (log2FC) profiles for 1000 genes from 114 signle-gene knockout (KO) experiments. For each experiment, gene expressions at 6 time points (0, 20, 40, 60, 80, 100) are included. Please refere to GNW1 data in DeltaNeTS manuscript.
 
 `glist`: The list of gene symbols corresponding to the rows in the log2FC data
 
@@ -36,9 +36,6 @@ tp <- tobject$Time ## a vector of time points of the samples in the matrix lfc
 group <- tobject$Group ## a vector of indices of the grouped samples
 slope <- generateSlope(lfc = lfc, tp = tp, group = group)
 ```
-
-#### __REFERENCES__:
-[1]	Schaffter,T.,Marbach,D., and Floreano,D. (2011) GeneNetWeaver: In silico benchmark generation and performance profiling of network inference methods. Bioinformatics, 27(16), 2263–2270.
 
 #### Implementing DeltaNeTS
 DeltaNeTS infers the network model A and perturbation matrix P, using lasso regression with 10-fold cross validation (default).
@@ -62,3 +59,5 @@ The greater magnitude of the perturbation scores by deltanets implies the higher
 rankMat = rankp(result,glist)
 head(rankMat$rankOfGenes[1:10,1:12],n=12)
 ```
+#### __REFERENCES__:
+[1]	Schaffter,T.,Marbach,D., and Floreano,D. (2011) GeneNetWeaver: In silico benchmark generation and performance profiling of network inference methods. Bioinformatics, 27(16), 2263–2270.
